@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--------------------list groups---------------------------->
+<div class="container">
+  <h2>Active Item in a List Group</h2>
+  <div class="list-group">
+    <a href="#" class="list-group-item active">First item</a>
+    <a href="#" class="list-group-item">Second item</a>
+    <a href="#" class="list-group-item">Third item</a>
+  </div>
+</div>
+<!------------------------progress bars-------------------------->
+<div class="container">
+  <h2>Animated Progress Bar</h2>
+  <p>The .active class animates the progress bar:</p> 
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40%
+    </div>
+  </div>
+</div>
+<!---------------------------pagination------------------------------->
+<div class="container">
+  <h2>Pagination - Active State</h2>
+  <p>Add class .active to let the user know which page he/she is on:</p>
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li class="active"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</div>
+<!---------------------------------Affix------------------------------->
+<div class="container-fluid" style="background-color:#2196F3;color:#fff;height:200px;">
+  <h1>Bootstrap Affix Example</h1>
+  <h3>Fixed (sticky) vertical sidenav on scroll</h3>
+  <p>Scroll this page to see how the left navigation menu behaves with data-spy="affix".</p>
+  <p><strong>The left menu sticks to the page when you have scrolled a specified amount of pixels.</strong></p>
+</div>
+<br>
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li class="active"><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+      <h1>Some text to enable scrolling</h1>
+    </div>
+  </div>
+</div>
+<!----------------------------------Alerts------------------------>
+<div class="container">
+  <h2>Alerts</h2>
+  <div class="alert alert-success alert-dismissible">
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <div class="alert alert-info alert-dismissible">
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  <div class="alert alert-warning alert-dismissible">
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  <div class="alert alert-danger alert-dismissible">
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+</div>
+<div class="container">
+  <h2>Alert Links</h2>
+  <p>Add the alert-link class to any links inside the alert box to create "matching colored links".</p>
+  <div class="alert alert-success">
+    <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-info">
+    <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+  </div>
+</div>
+<!------------------------------Badges---------------------->
+<div class="container">
+  <h2>Badges</h2>
+  <a href="#">News <span class="badge">5</span></a><br>
+  <a href="#">Comments <span class="badge">10</span></a><br>
+  <a href="#">Updates <span class="badge">2</span></a>
+</div>
+<!-------------------Pagination Breadcrumps------------------->
+<div class="container">
+  <h2>Breadcrumbs</h2>
+  <p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>                  
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Private</a></li>
+    <li><a href="#">Pictures</a></li>
+    <li class="active">Vacation</li>        
+  </ul>
+</div>
+<!------------------------------Carousel--------------------->
+<div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="C:\Users\Happy\Desktop\vit\assets\images\picture.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\Happy\Desktop\vit\assets\images\picture.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="C:\Users\Happy\Desktop\vit\assets\images\picture.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!----------------------------Checkbox---------------------------------->
+<div class="container">
+  <h2>Form control: checkbox</h2>
+  <p>The form below contains three checkboxes. The last option is disabled:</p>
+  <form>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 1</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 2</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" disabled>Option 3</label>
+    </div>
+  </form>
+</div>
+<div class="container">
+  <h2>Form control: inline checkbox</h2>
+  <p>The form below contains three inline checkboxes:</p>
+  <form>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 3
+    </label>
+  </form>
+</div>
+<!---------------------------Grid----------------------->
+<div class="container-fluid">
+  <h1>Offsetting Columns</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="row" style="background-color:lavender;">
+    <div class="col-sm-5 col-md-6" style="background-color:lightgray;">.col-sm-5 .col-md-6</div>
+    <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0" style="background-color:lightcyan;">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+  </div>
+</div>
+<!-------------------------Collapsible content------------->
+<div class="container">
+  <h2>Simple Collapsible</h2>
+  <p>Click on the button to toggle between showing and hiding content.</p>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse in">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+<!-----------------------------Glyphicons------------------------->
+<div class="container">
+  <h2>Glyphicon Examples</h2>
+  <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+  <p>Envelope icon as a link:
+    <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+  </p>
+  <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+  <p>Search icon on a button:
+    <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+  </p>
+  <p>Search icon on a styled button:
+    <button type="button" class="btn btn-info">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+  </p>
+  <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>      
+  <p>Print icon on a styled link button:
+    <a href="#" class="btn btn-success btn-lg">
+      <span class="glyphicon glyphicon-print"></span> Print 
+    </a>
+  </p> 
+</div>
+<!-----------------------------------Tabs--------------------->
+<div class="container">
+  <h2>Dynamic Tabs</h2>
+  <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+<!-------------------------------media objects---------------->
+<div class="container">
+  <h2>Media Object</h2>
+  <p>Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+  
+  <!-- Left-aligned media object -->
+  <div class="media">
+    <div class="media-left">
+      <img src="C:\Users\Happy\Desktop\vit\assets\images\picture.jpg" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Left-aligned</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Right-aligned media object -->
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">Right-aligned</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="media-right">
+      <img src="C:\Users\Happy\Desktop\vit\assets\images\picture.jpg" class="media-object" style="width:60px">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
